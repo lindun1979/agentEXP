@@ -1,0 +1,7 @@
+{
+  "search_first": true,
+  "fallback_to_vsearch": true,
+  "search_timeout_sec": 10,
+  "vsearch_timeout_sec": 15,
+  "top_n": 3
+}

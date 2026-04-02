@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "pattern": "私有记忆系统",
+      "rewrite": "memory whoosh vsearch hybrid"
+    },
+    {
+      "pattern": "记忆插件",
+      "rewrite": "memory plugin adapter"
+    },
+    {
+      "pattern": "下一步",
+      "rewrite": "STATE Next"
+    }
+  ],
+  "fallback_strategy": "keep_original"
+}
