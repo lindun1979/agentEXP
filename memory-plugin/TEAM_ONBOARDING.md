@@ -1,6 +1,8 @@
 # Team Onboarding（5分钟接入）
 
-适用对象：希望在自己的 OpenClaw 环境中接入 `agentEXP` 记忆插件的同事。
+适用对象：希望在自己的 OpenClaw 环境中接入 `agentEXP` 记忆插件 starter 的同事。
+
+> ⚠️ 本文档对应的是 starter（qmd 示例链路），非生产全量链路。生产口径请先看仓库根目录 `PRODUCTION_ARCHITECTURE.md`。
 
 ---
 
