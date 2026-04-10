@@ -1,0 +1,83 @@
+{
+  "version": "2026-03-16",
+  "description": "中文查询改写规则 - 针对工作记忆场景的术语扩展与同义词映射",
+  "rules": [
+    {
+      "pattern": "私有记忆系统位置",
+      "rewrite": "私有 记忆 系统 位置 main.sqlite workspace memory"
+    },
+    {
+      "pattern": "插件未正确加载 根因",
+      "rewrite": "插件 未正确 加载 根因 slots memory"
+    },
+    {
+      "pattern": "配置作用",
+      "rewrite": "配置 作用 slots memory 插件"
+    },
+    {
+      "pattern": "收敛策略",
+      "rewrite": "paths 收敛 MEMORY memory topics"
+    },
+    {
+      "pattern": "未经同意修改",
+      "rewrite": "未经 主会话 明确授权 禁止 修改 openclaw.json plugins.slots.memory"
+    },
+    {
+      "pattern": "方法论",
+      "rewrite": "方法论 原则 实事求是"
+    },
+    {
+      "pattern": "双目标并行",
+      "rewrite": "双目标 并行 自动化 系统能力"
+    },
+    {
+      "pattern": "记忆管理偏好",
+      "rewrite": "记忆 管理 偏好 决策 推进 阻塞"
+    },
+    {
+      "pattern": "当前目标",
+      "rewrite": "当前 目标 STATE Goal"
+    },
+    {
+      "pattern": "高价值集合优先",
+      "rewrite": "高价值 集合 优先 检索"
+    },
+    {
+      "pattern": "干扰意图过滤",
+      "rewrite": "干扰 意图 过滤 误召回"
+    },
+    {
+      "pattern": "误召回率目标",
+      "rewrite": "误召回 目标 40%"
+    },
+    {
+      "pattern": "下一步",
+      "rewrite": "STATE Next"
+    },
+    {
+      "pattern": "检索配置",
+      "rewrite": "Tavily 检索 引擎 配置"
+    },
+    {
+      "pattern": "冬哥",
+      "rewrite": "冬哥 林盾 林总 用户"
+    },
+    {
+      "pattern": "欧维斯",
+      "rewrite": "欧维斯 OpCoder 运维助理"
+    },
+    {
+      "pattern": "记忆系统",
+      "rewrite": "记忆 系统 memory-core QMD 索引"
+    },
+    {
+      "pattern": "vsearch",
+      "rewrite": "vsearch 向量搜索"
+    },
+    {
+      "pattern": "searchMode",
+      "rewrite": "searchMode 搜索模式"
+    }
+  ],
+  "fallback_strategy": "keep_original"
+}

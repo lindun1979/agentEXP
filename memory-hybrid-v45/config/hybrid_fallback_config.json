@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "mode": "miss-only",
+  "model": "BAAI/bge-small-zh-v1.5",
+  "timeoutMs": 10000,
+  "pythonBin": "/home/zambrotta_gmail_com/.openclaw/venvs/lancedb-sidecar/bin/python",
+  "scriptPath": "/home/zambrotta_gmail_com/.openclaw/extensions/memory-hybrid/vector_fallback_search.py"
+}

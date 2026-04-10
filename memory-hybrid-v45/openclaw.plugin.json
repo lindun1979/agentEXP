@@ -1,0 +1,29 @@
+{
+  "id": "memory-hybrid",
+  "name": "Memory (Hybrid BM25 + Vector)",
+  "kind": "memory",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "embedding": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "serviceUrl": { "type": "string" },
+          "model": { "type": "string" },
+          "dimensions": { "type": "number" }
+        }
+      },
+      "pythonBin": { "type": "string" },
+      "hfHome": { "type": "string" },
+      "whooshIndexDir": { "type": "string" },
+      "lancedbPath": { "type": "string" },
+      "autoRecall": { "type": "boolean" },
+      "autoCapture": { "type": "boolean" },
+      "captureMaxChars": { "type": "number", "minimum": 100, "maximum": 10000 },
+      "cacheTtlMs": { "type": "number" },
+      "cacheMaxEntries": { "type": "number" }
+    }
+  }
+}

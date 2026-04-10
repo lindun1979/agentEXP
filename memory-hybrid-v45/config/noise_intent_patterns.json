@@ -1,0 +1,53 @@
+{
+  "version": "2026-03-16",
+  "description": "干扰意图识别模式 - 用于短路检索，避免无关查询进入向量搜索",
+  "patterns": [
+    {
+      "category": "weather",
+      "regex": "天气|气温|温度|下雨|晴天|多云|预报|weather|temperature",
+      "action": "short_circuit",
+      "note": "天气相关查询 - 直接返回空结果"
+    },
+    {
+      "category": "poetry",
+      "regex": "写一首|诗|诗歌|诗句|poem|verse",
+      "action": "short_circuit",
+      "note": "诗歌创作请求 - 直接返回空结果"
+    },
+    {
+      "category": "movie",
+      "regex": "电影|影片|推荐.*电影|movie|film|cinema",
+      "action": "short_circuit",
+      "note": "电影推荐 - 直接返回空结果"
+    },
+    {
+      "category": "programming",
+      "regex": "java|面试题|并发|编程|代码|programming|code",
+      "action": "short_circuit",
+      "note": "编程问题 - 直接返回空结果"
+    },
+    {
+      "category": "stock",
+      "regex": "股市|行情|股票|涨跌|指数|stock|market|trading",
+      "action": "short_circuit",
+      "note": "股市行情 - 直接返回空结果"
+    },
+    {
+      "category": "general_knowledge",
+      "regex": "推荐.*书|书籍|book|推荐.*课程|course|学习|study",
+      "action": "short_circuit",
+      "note": "通用知识推荐 - 直接返回空结果"
+    },
+    {
+      "category": "exclusions",
+      "regex": "当前目标|STATE|误召回|方法论|记忆管理|插件|配置",
+      "action": "exclude",
+      "note": "排除模式 - 即使匹配其他模式也不过滤"
+    }
+  ],
+  "short_circuit_result": {
+    "action": "return_empty",
+    "reason": "noise_intent_detected"
+  },
+  "matching_mode": "case_insensitive"
+}
